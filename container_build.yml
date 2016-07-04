@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  
+  tasks:
+   - name: Build Container
+     docker:
+       name: rhel6
+       image: rhel6/rhel
+       pull: missing
+       detach: yes
+       tty: yes
+       state: started
