@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks: 
+  
+   - name: Stop all containers
+     shell: "docker stop $(docker ps -q)"
+   
+   - name: Remove all containers
+     shell: "docker rm $(docker ps -a -q)"
