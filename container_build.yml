@@ -4,10 +4,10 @@
   gather_facts: no
   
   tasks:
-   - name: Build Container
+   - name: Build RHEL6 Container with Ansible
      docker:
-       name: rhel6
        image: rhel6/rhel
+       docker_api_version: 1.22
        pull: missing
        detach: yes
        tty: yes
