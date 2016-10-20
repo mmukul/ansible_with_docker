@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks: 
+  
+   - name: Remove all docker images
+     shell: "docker images -q |xargs docker rmi"
