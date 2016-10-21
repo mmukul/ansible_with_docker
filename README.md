@@ -6,15 +6,15 @@
  docker-py >= 1.10.3
  The docker server >= 1.10.3
  
-# How to provision containers
+## How to provision containers
 
 * `ansible-playbook container_build.yml`
 
-# Remove containers
+## Remove containers
 
 * `ansible-playbook container_remove.yml`
 
-# Remove docker images
+## Remove docker images
 
 * `ansible-playbook container_remove-image.yml`
 
