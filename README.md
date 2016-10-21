@@ -8,15 +8,15 @@
  
 ## How to provision containers
 
-* `ansible-playbook container_build.yml`
+$ ansible-playbook container_build.yml
 
 ## Remove containers
 
-* `ansible-playbook container_remove.yml`
+$ ansible-playbook container_remove.yml
 
 ## Remove docker images
 
-* `ansible-playbook container_remove-image.yml`
+ansible-playbook container_remove-image.yml
 
 
 
